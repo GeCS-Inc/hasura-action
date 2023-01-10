@@ -11,6 +11,10 @@ LABEL com.github.actions.color="gray-dark"
 
 RUN apk add --no-cache curl bash libstdc++ jq
 
+RUN cat /etc/resolv.conf
+RUN nslookup google.com
+RUN nslookup github.com
+
 COPY "get-hasura-cli.sh" "/get-hasura-cli.sh"
 RUN bash /get-hasura-cli.sh
 
