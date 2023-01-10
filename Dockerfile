@@ -12,7 +12,7 @@ LABEL com.github.actions.color="gray-dark"
 RUN apk add --no-cache curl bash libstdc++ jq
 
 RUN echo 'nameserver 8.8.8.8' >> /etc/resolv.conf && \
-  RUN nslookup github.com
+  nslookup github.com
 
 COPY "get-hasura-cli.sh" "/get-hasura-cli.sh"
 RUN bash /get-hasura-cli.sh
