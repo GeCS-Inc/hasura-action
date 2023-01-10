@@ -2,5 +2,6 @@
 *
 # include required files with an exception
 !entrypoint.sh
+!get-hasura-cli.sh
 !LICENSE
 !README.md
