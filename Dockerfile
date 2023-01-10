@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:alpine-3.15_glibc-2.33
+FROM frolvlad/alpine-glibc:alpine-3.17_glibc-2.34
 
 LABEL repository="https://github.com/tibotiber/hasura-action"
 LABEL homepage="https://github.com/tibotiber/hasura-action"
