@@ -11,6 +11,8 @@ LABEL com.github.actions.color="gray-dark"
 
 RUN apk add --no-cache curl bash libstdc++ jq
 
+RUN rm /etc/resolv.conf && echo “nameserver 8.8.8.8” > /etc/resolv.conf
+
 RUN cat /etc/resolv.conf
 RUN nslookup google.com
 RUN nslookup github.com
